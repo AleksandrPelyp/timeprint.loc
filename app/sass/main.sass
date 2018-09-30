@@ -6,7 +6,7 @@
 	color: #666
 
 ::selection
-	background-color: $accent
+	background-color: $os
 	color: #fff
 
 body
@@ -40,4 +40,125 @@ b, strong
 
 
 
+.navbar
+	background-color: $header
+	height: 80px
+	width: 100%
+	.nav
+		a
+			height: 100px
+			display: block
+			margin-top: 14px
+			img
+				display: inline
+				
+
+
+.menu
+	width: 100%
+	height: 75px
+	margin-top: 20px
+	margin-bottom: 20px
+	.nav
+		width: 100%
+		height: 75px
+		background-color: lighten($os, 15%)
+		li
+			&:hover
+				background-color: darken($os, 2%)
+			a
+				font-family: $logo-font
+				font-size: 14px
+				text-align: center
+				color: $header
+				text-decoration: none
+				margin-top: 18px
+				text-transform: uppercase
+				#offset
+					margin-bottom: -6px
+					fill: $header
+					width: 25px
+					height: 25px
+					&:hover
+						fill: $cube1
+				#print
+					
+					margin-bottom: -6px
+					stroke: $header
+					width: 25px
+					height: 25px
+					&:hover
+						stroke: $cube2
+				#baner
+					margin-bottom: -6px
+					fill: $header
+					width: 25px
+					height: 25px
+					&:hover
+						fill: $cube3
+				#card
+					margin-bottom: -6px
+					fill: $header
+					width: 25px
+					height: 25px
+					&:hover
+						fill: $cube4
+
+
+	 		
+
+
+
+
+.content
+	background-color: $os
+	width: 100%
+	.button
+		background-color: lighten($os, 15%)
+		display: inline-block
+		width: 100%
+		height: 160px
+		margin-bottom: 20px
+		a
+			width: 100%
+			height: 100%
+			display: inline-block
+			font-weight: 550
+			text-align: center
+			color: $os
+			text-decoration: none
+			font-size: 14px
+			margin-top: 25px
+
+	.cube1
+		// background-color: $cube1
+		&:hover
+			transition: .5s
+			// background-color: darken($cube1, 15%)
+	.cube2
+		// background-color: $cube2
+		&:hover
+			transition: .5s
+			// background-color: darken($cube2, 15%)
+	.cube3
+		// background-color: $cube3
+		&:hover
+			transition: .5s
+			// background-color: darken($cube3, 15%)
+	.cube4
+		// background-color: $cube4
+		&:hover
+			transition: .5s
+			// background-color: darken($cube4, 15%)
+	.cube5
+		// background-color: $cube5
+		&:hover
+			transition: .5s
+			// background-color: darken($cube5, 15%)
+
+
+
+.footer
+	background-color: $header
+	height: 300px
 @import "media" // Always at the end
