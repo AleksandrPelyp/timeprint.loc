@@ -64,7 +64,7 @@ b, strong
 		height: 75px
 		background-color: lighten($os, 15%)
 		li
-			&:hover
+			&:hover, &:active
 				background-color: darken($os, 2%)
 			a
 				font-family: $logo-font
@@ -74,15 +74,19 @@ b, strong
 				text-decoration: none
 				margin-top: 18px
 				text-transform: uppercase
+				&:hover, &:active
+					color: $cube1
 				#offset
+					margin-right: 5px
 					margin-bottom: -6px
 					fill: $header
 					width: 25px
 					height: 25px
-					&:hover
+					&:hover, &:active
+						
 						fill: $cube1
 				#print
-					
+					margin-right: 5px
 					margin-bottom: -6px
 					stroke: $header
 					width: 25px
@@ -90,6 +94,7 @@ b, strong
 					&:hover
 						stroke: $cube2
 				#baner
+					margin-right: 5px
 					margin-bottom: -6px
 					fill: $header
 					width: 25px
@@ -97,6 +102,7 @@ b, strong
 					&:hover
 						fill: $cube3
 				#card
+					margin-right: 5px
 					margin-bottom: -6px
 					fill: $header
 					width: 25px
