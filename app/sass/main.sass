@@ -123,18 +123,33 @@ b, strong
 		background-color: lighten($os, 15%)
 		display: inline-block
 		width: 100%
-		height: 160px
-		margin-bottom: 20px
+		height: 170px
+		border-radius: 3px
+		margin-bottom: 30px
 		a
 			width: 100%
-			height: 100%
+			height: 100px
 			display: inline-block
 			font-weight: 550
 			text-align: center
 			color: $os
+		.cbody
+			color: $text
 			text-decoration: none
-			font-size: 14px
-			margin-top: 25px
+			font-size: 16px
+			font-family: $logo-font
+			text-transform: uppercase
+			padding: 10px
+			width: 100%
+			height: 70px
+			display: flex
+			position: relative
+			.foo
+				width: 100%
+				border-top: 1px solid #EDEDED
+				padding-top: 5px
+
+			
 
 	.cube1
 		// background-color: $cube1
@@ -166,5 +181,6 @@ b, strong
 
 .footer
 	background-color: $header
+	width: 100%
 	height: 300px
 @import "media" // Always at the end
